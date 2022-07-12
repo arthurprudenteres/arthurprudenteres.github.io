@@ -1,0 +1,30 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.titulo h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.titulo h1::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(/assets/img/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.titulo p {
+  font-size: 1.5rem;
+  color: #545454;
+}
